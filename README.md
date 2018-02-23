@@ -5,7 +5,7 @@ This library has the function of sending email using a phpmailer library. Doing 
 To do a library installation, run the following command:
 
 ```sh
-Composer requires gustavoweb / composer_teste
+Composer require andrerodri13/composer_teste
 ```
 
 To make use of the library, simply require the autoload of the composer, invoke a class and make a method call:
@@ -15,11 +15,11 @@ To make use of the library, simply require the autoload of the composer, invoke 
 
 require __DIR__. '/vendor/autoload.php';
 
-USE Notification \ Email;
+USE Notification\Email;
 
 $mail = new Email (2, "mail.host.com", "your@email.com", "your-pass", "smtp secure (tls / ssl)", "port (587)", 'from@email.com", "From the Name");
 
-$ email-> sendEmail ("SUbject", "Content", "reply@email.com", "Replay name", "address@email.com", "Address name");
+$email->sendEmail ("SUbject", "Content", "reply@email.com", "Replay name", "address@email.com", "Address name");
 ```
 
 Note that a whole setup of sending the email is using the magic builder method! Once the Builder method is invoked within your application, your system will be able to fire the shots.
@@ -42,6 +42,8 @@ MIT
 
 [//]: #
 [Gustavo Web]: <mailto: gustavo@upinside.com.br>
-[Robson V. Milk]: <mailto: robson@upinside.com.br>
+[André S. Rodrigues]: <mailto: andre@asrsistemas.com.br>
+[Robson V. Leite]: <mailto: robson@upinside.com.br>
 [UpInside Training]: <https://www.upinside.com.br>
+[ASR Sistemas]: <https://www.asrsistemas.com.br>
 [phpMailer]: <https://github.com/PHPMailer/PHPMailer>
